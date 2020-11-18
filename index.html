@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Desafio Rockeseat</title>
+	</head>
+	<body>
+		<header>
+			<h1>Desafio Rocketseat - Thaís Munier Wermelinger<h1>
+		</header>
+
+		<!--<nav>
+			<ul>
+				<li><a href="n1">NÚMERO 1</a></li>
+				<li><a href="n2">NÚMERO 2</a></li>
+				<li><a href="n3">NÚMERO 3</a></li>
+				<li><a href="n4">NÚMERO 4</a></li>
+				<li><a href="n5">NÚMERO 5</a></li>
+			</ul>	
+		</nav>-->
+
+		<!-- NÚMERO 1 -->
+		<h2 id="n1">Número 1</h2>
+			<h3>Crie uma função que dado o objeto a seguir:</h3>
+			<img src="num1.jpg">
+			<h3>Retorne os dados em conjunto em uma frase</h3>
+			<h4>Resultado:</h4>
+				<p id="num1"></p>
+
+		<br>
+
+		<!-- NÚMERO 2 -->
+		<h2 id="n2">Número 2</h2>
+			<form>
+				<p>X: <input type="number" id="X"></p>
+				<p>Y: <input type="text" id="Y"></p>
+    			<button onclick="PARES()">ENVIAR</button>
+
+				<p id="num2"></p>
+
+		<br>
+		
+		<!-- NÚMERO 3 -->
+		<h2 id="n3">Número 3</h2>
+		<p id="num3"></p>
+
+		<br>
+				
+		<!-- NÚMERO 4 -->
+		<h2 id="n4">Número 4</h2>
+		<p id="num4"></p>
+
+		<br>
+				
+		<!-- NÚMERO 5 -->
+		<h2 id="n5">Número 5</h2>
+		<p id="num5"></p>
+	
+		<script>
+			//num1
+				var endereco = 
+				{
+					rua: "Rua dos pinheiros",
+					numero: 1293,
+					bairro: "Centro",
+					cidade: "São Paulo",
+					uf: "SP"
+				};
+		
+				var resultado1 = "O usuário mora em " + endereco.cidade + "/" + endereco.uf + ", no bairro <strong>" + endereco.bairro + "</strong>, na rua \"" + endereco.rua + " \" com n° " + endereco.numero + ".";
+				console.log (resultado1);
+				document.getElementById("num1").innerHTML = resultado1;
+
+			//num2
+				function PARES (x, y)
+				{
+					var pares = [];
+					for (i = x; i <= y; i++) 
+					{
+						if(i%2==0)
+							pares.push(i);
+					}
+					resultado2 = pares.toString();
+				}
+
+				console.log (resultado2);
+				document.getElementById("num2").innerHTML = resultado2;
+
+			//num3
+				console.log (resultado1);
+				document.getElementById("num3").innerHTML = resultado1;
+
+			//num4
+				console.log (resultado1);
+				document.getElementById("num4").innerHTML = resultado1;
+
+			//num5
+				console.log (resultado1);
+				document.getElementById("num5").innerHTML = resultado1;
+		
+		</script>
+		
+	</body>
+</html>
