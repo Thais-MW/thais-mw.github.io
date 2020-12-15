@@ -21,7 +21,7 @@
         				if(i%2==0)
             			pares.push(i); 
        				}
-       				return pares.toString();
+       				return pares.parseFloat();
 				}
     			var resultado = pares(1, 20);
     			var resultadoA = resultado.split(",");
